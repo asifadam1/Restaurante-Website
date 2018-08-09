@@ -336,6 +336,7 @@ header.masthead p {
 
 /*-------------------*/
 
+/*nav links for menu grow*/
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.3); }
 
@@ -346,6 +347,13 @@ header.masthead p {
   padding-top: 25px;
 }
 
+/*creates a space between links in mobile view*/
+.nav-item{
+  padding-bottom: 10px;
+}
+
+
+/*styles the menu tabs*/
 .menu-tabs>ul>li>a{
 
   text-decoration: none;
@@ -357,9 +365,11 @@ header.masthead p {
     font-weight: 700;
 }
 
+/*on hover of menu tabs*/
 .menu-tabs>ul>li>a:hover{
   color: red;
 }
+
 
 .menu-tabs>ul>li>a:focus{
   color: red;
@@ -372,7 +382,7 @@ header.masthead p {
  .nav-link-tab.active {
     border-bottom: 3px solid red;
     padding-bottom: 3px;
-	  color: red;
+
 
 }
 
