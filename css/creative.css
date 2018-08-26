@@ -19,7 +19,13 @@ html {
 }
 
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Merriweather', 'Acme', Arial, sans-serif;
+}
+
+.text-style{
+  font-family: 'Acme', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 hr {
@@ -45,11 +51,11 @@ a:hover {
 
 h1,
 h2,
-h3,
+
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+
 }
 
 /*this heading is section heading position*/
@@ -360,9 +366,11 @@ header.masthead p {
   text-transform: uppercase;
   color: #731963;
   padding: 15px;
-    font-size: 15px;
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 700;
+    font-size: 20px;
+    /* font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; */
+    font-family: 'Acme', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
 
 /*on hover of menu tabs*/
@@ -389,12 +397,21 @@ header.masthead p {
 /*spacing beetween cards*/
 .cards {
   padding-bottom: 10px;
-  background-color: #731963;
+  background-image: url("../img/background-image.jpg");
   color: #fff;
+  font-family: 'Acme', sans-serif;
+    letter-spacing: 2px;
+
+}
+
+.menu-item-name h3{
+  font-family: 'Acme', sans-serif;
+    letter-spacing: 2px;
 }
 
 /*displays lines between cards*/
 .menu-info {
+
   padding: 10px;
   border-bottom:1px solid  #fff;
 }
@@ -406,6 +423,13 @@ header.masthead p {
 .menu-text {
   float: left;
   padding-right: 10px;
+
+}
+
+.price{
+  position: absolute;
+  top: 10px;
+right:80px;
 }
 
 
