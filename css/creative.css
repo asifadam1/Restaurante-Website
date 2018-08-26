@@ -25,7 +25,7 @@ body {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: #F05F40;
+  border-color: #731963;
 }
 
 hr.light {
@@ -59,11 +59,11 @@ h6 {
 }
 
 .bg-primary {
-  background-color: #F05F40 !important;
+  background-color:  #731963 !important;
 }
 
 .bg-dark {
-  background-color: #212529 !important;
+    background-color: #212529 !important;
 }
 
 .text-faded {
@@ -102,7 +102,7 @@ img::-moz-selection {
 
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-  background-color: #fff;
+  background-color:  #731963;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -112,12 +112,12 @@ img::-moz-selection {
 #mainNav .navbar-brand {
   font-weight: 700;
   text-transform: uppercase;
-  color: #F05F40;
+  color: #fff;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #f05f40;
+  color: #2E294E;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
@@ -125,7 +125,7 @@ img::-moz-selection {
   font-size: .9rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #212529;
+  color: #fff;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
@@ -319,14 +319,14 @@ header.masthead p {
 }
 
 .btn-primary {
-  background-color: #F05F40;
+  background-color: #731963;
   /* background-color: #7cc4ff; */
-  border-color: #F05F40;
+
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
-  background-color: #ee4b28 !important;
+  background-color: #2E294E !important;
 }
 
 .btn-primary:active, .btn-primary:focus {
@@ -358,7 +358,7 @@ header.masthead p {
 
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
+  color: #731963;
   padding: 15px;
     font-size: 15px;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -367,20 +367,20 @@ header.masthead p {
 
 /*on hover of menu tabs*/
 .menu-tabs>ul>li>a:hover{
-  color: red;
+  color: #731963;
 }
 
 
 .menu-tabs>ul>li>a:focus{
-  color: red;
-  border-bottom: 4px solid red;
+  color: #731963;
+  border-bottom: 4px solid #731963;
   padding-bottom: 3px;
 }
 
 
 /*this is displaying underline on the active tab link*/
  .nav-link-tab.active {
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid #731963;
     padding-bottom: 3px;
 
 
@@ -389,12 +389,14 @@ header.masthead p {
 /*spacing beetween cards*/
 .cards {
   padding-bottom: 10px;
+  background-color: #731963;
+  color: #fff;
 }
 
 /*displays lines between cards*/
 .menu-info {
   padding: 10px;
-  border-bottom:1px solid  red;
+  border-bottom:1px solid  #fff;
 }
 
 .menu-img {
@@ -467,13 +469,13 @@ header.masthead p {
 }
 
 .box1{
-  background-color: yellow;
+
   height: 380px;
 
 }
 
 .box2{
-  background-color: red;
+
   height: 380px;
 
 }
@@ -481,6 +483,21 @@ header.masthead p {
 .map-image{
 
   height: 380px;
+}
+
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 /*-----------------------------------------------------------------*/
