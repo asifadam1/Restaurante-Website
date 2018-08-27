@@ -69,7 +69,9 @@ h6 {
 }
 
 .bg-dark {
-    background-color: #212529 !important;
+    /* background-color: #212529 !important; */
+    background-image: url("../img/background-image-section.jpg");
+     background-repeat: no-repeat;
 }
 
 .text-faded {
@@ -79,6 +81,8 @@ h6 {
 section {
   padding: 8rem 0;
 }
+
+
 
 .section-heading {
   margin-top: 0;
@@ -343,11 +347,11 @@ header.masthead p {
 /*-------------------*/
 
 /*nav links for menu grow*/
-.grow { transition: all .2s ease-in-out; }
+/* .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.3); }
 
 .grow1 { transition: all .3s ease-in-out; }
-.grow1:hover { transform: scale(1.1); }
+.grow1:hover { transform: scale(1.1); } */
 
 .tab-content{
   padding-top: 25px;
@@ -364,7 +368,7 @@ header.masthead p {
 
   text-decoration: none;
   text-transform: uppercase;
-  color: #731963;
+  color: #000000;
   padding: 15px;
     font-size: 20px;
     /* font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; */
@@ -373,26 +377,65 @@ header.masthead p {
     letter-spacing: 2px;
 }
 
-/*on hover of menu tabs*/
+/*added to give the menu tabs an underline transform effect*/
+.menu-tabs a::after{
+  content:'';
+  position: relative;
+  box-sizing    : border-box;
+  border-radius : 5px;
+  height:     5px;
+  left:0;
+  right:0;
+  width         : 0%;
+  display       : block;
+  background-color: #731963;
+  transform: scale(0, 1);
+  transition    : transform ease-in-out 250ms;
+
+
+}
+
+/*transform underline on hover*/
+.menu-tabs a:hover::after{
+  transform: scale(1, 1);
+  width: 100%;
+  color: red;
+
+
+}
+
+/*underline to show on active link*/
+.menu-tabs a:active{
+
+  transform: scale(1, 1);
+  width: 100%;
+  height: 5px;
+
+
+}
+
+
+/*on hover of menu tabs to change red*/
 .menu-tabs>ul>li>a:hover{
-  color: #731963;
+  color: red;
 }
 
 
 .menu-tabs>ul>li>a:focus{
-  color: #731963;
-  border-bottom: 4px solid #731963;
-  padding-bottom: 3px;
+color: red;
+
 }
 
 
 /*this is displaying underline on the active tab link*/
- .nav-link-tab.active {
-    border-bottom: 3px solid #731963;
-    padding-bottom: 3px;
+ .nav-link-tab.active::after {
 
-
+  transform: scale(1, 1);
+   width: 100%;
+   height: 5px;
 }
+
+
 
 /*spacing beetween cards*/
 .cards {
@@ -400,8 +443,24 @@ header.masthead p {
   background-image: url("../img/background-image.jpg");
   color: #fff;
   font-family: 'Acme', sans-serif;
-    letter-spacing: 2px;
+  letter-spacing: 2px;
+  transform-origin: 0% 100%;
+  animation-duration: .5s;
+  animation-name: fadeAndScale;
+  animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
 
+}
+
+
+@keyframes fadeAndScale {
+    from {
+        opacity: 0;
+        transform: scale(.9, .9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
 }
 
 .menu-item-name h3{
